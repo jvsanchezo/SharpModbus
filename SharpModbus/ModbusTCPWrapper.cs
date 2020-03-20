@@ -5,14 +5,14 @@ namespace SharpModbus
 	public class ModbusTCPWrapper : IModbusWrapper
 	{
 		private readonly IModbusCommand wrapped;
-		private readonly int transactionId;
+		private readonly ushort transactionId;
 		
 		public IModbusCommand Wrapped { get { return wrapped; } }
-		public int TransactionId { get { return transactionId; } }
+		public ushort TransactionId { get { return transactionId; } }
 		public int RequestLength { get { return wrapped.RequestLength + 6; } }
 		public int ResponseLength { get { return wrapped.ResponseLength + 6; } }
 		
-		public ModbusTCPWrapper(IModbusCommand wrapped, int transactionId)
+		public ModbusTCPWrapper(IModbusCommand wrapped, ushort transactionId)
 		{
 			this.wrapped = wrapped;
 			this.transactionId = transactionId;
