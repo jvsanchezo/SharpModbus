@@ -1,10 +1,10 @@
 # SharpModbus
 
-C# Modbus Tools
+C# Modbus Tools based on the work of Samuel Ventura (https://github.com/samuelventura/SharpModbus). Just forked to solve a bug detected.
 
 ## Usage
 
-No documentation yet. Resort to tests at SharpModbusLiveTest subproject for guidance. It contains a couple of real devices communication samples.
+No documentation yet. 
 
 [SharpMaster](https://github.com/samuelventura/SharpMaster) uses SharpModbus too.
 
